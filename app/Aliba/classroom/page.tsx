@@ -1,9 +1,4 @@
-type User = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-};
+import Filter from "@/app/components/Filter";
 
 
 
@@ -15,11 +10,7 @@ async function page() {
   return (
     <div>
       <h1>Hello This is Classroom Page</h1>
-      <ul>
-        {users.map((user: User) => {
-            return <li key={user.id}><h1>{user.name}</h1><h2>{user.username}</h2></li>;
-        })}
-      </ul>
+      <Filter users={users}/>
     </div>
   );
 }

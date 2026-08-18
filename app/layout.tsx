@@ -26,10 +26,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <div className="flex gap-4 bg-blue-400">
-        <Link href="/Home">Home</Link>
+        <Link href="/">Home</Link>
         <Link href="/about">about</Link>
         <Link href="/Aliba">Contact</Link>
         <Link href="/Aliba/classroom">Classroom</Link>
+        
       </div>
         {children}</body>
     </html>
